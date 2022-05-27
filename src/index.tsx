@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const inDevelopment = process.env.NODE_ENV === 'development';
-const Router = inDevelopment ? BrowserRouter : HashRouter;
+// const inDevelopment = process.env.NODE_ENV === 'development';
+// const Router = inDevelopment ? BrowserRouter : HashRouter;
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
       <App />
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
